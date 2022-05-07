@@ -130,9 +130,7 @@ header {
   color: red;
   cursor: pointer;
 }
-.headerInput {
-  
-}
+
 * {
   box-sizing: border-box;
 }
@@ -239,12 +237,9 @@ text-align: center;
   height: 60px;
   width: 60px;
 }
-.circleFriendsBlock {
-  /* display: flex;
-  justify-content: space-around; */
-}
+
 .circleFriendsItem {
-  /* display: flex; */
+  
   justify-content: space-between;
   margin: 5px;
   align-items: center;
@@ -307,14 +302,9 @@ text-align: center;
   font-family: 'Comfortaa', cursive;
   
 }
-
-
-
-
 /* Профиль Профиль Профиль Профиль Профиль Профиль */
 
 .avatarPropfile {
-  
   border-radius: 10px;
   background-color: rgb(0, 47, 255);
   height: 200px;
@@ -342,4 +332,27 @@ text-align: center;
   padding: 10px;
   outline: none;
   cursor: pointer;
+}
+
+.playList {
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-top: 10px;
+  align-items: center;
+  playList::after {
+      content: '';
+      background-color: black;
+      height: 1px;
+      display: block;
+    }
+}
+
+.nameMusic {
+  color: brown;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  
+  
 }

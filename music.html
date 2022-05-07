@@ -14,41 +14,36 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oleo+Script+Swash+Caps&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div class="gridContainer">
     <header>
-
       <div class="headerItem">
-
         <div class="headerLogo">Gopher</div>
-
         <div class="headerCenter">
           <div class="headerInput">
             <form>
               <input type="text" placeholder="Искать здесь...">
-              <button type="submit"></button>
+              <button class="buttonHeader" type="submit"></button>
             </form>
           </div>
           <div class="headerActive">
-            <img src="https://cdn.pixabay.com/photo/2015/12/16/17/41/bell-1096280_960_720.png" alt="">
+            <img class="headerActiveImg" src="https://cdn.pixabay.com/photo/2015/12/16/17/41/bell-1096280_960_720.png"
+              alt="">
           </div>
         </div>
-
         <div class="headerAboutMe">
           Кто я?
         </div>
-
       </div>
-
     </header>
 
-
-
-
     <aside>
-
       <div class="profile">
         <div class="profileUp">
           <div class="profileItemStyle">
@@ -71,12 +66,74 @@
         </div>
       </div>
 
+      <div class="friendsBlockNav">
+        <div class="friendTitle">
+          <a class="friendTitleNav" href="friends.html">Друзья:on-line</a>
+        </div>
+        <div class="circleFriendsBlock">
+          <div class="circleFriendsItem">
+            <div class="circle"></div>
+            <div class="friendNameStaly">Alex</div>
+          </div>
+          <div class="circleFriendsItem">
+            <div class="circle"></div>
+            <div class="friendNameStaly">Кирилл Капризов</div>
+          </div>
+          <div class="circleFriendsItem">
+            <div class="circle"></div>
+            <div class="friendNameStaly">тов. Майор</div>
+          </div>
+        </div>
+      </div>
+
     </aside>
     <main>
-      
-          
 
-       
+      <div class="playList">
+        <div class="nameMusic">
+          Alan Tam - Midnight Rider
+        </div>
+        <div class="playMusic">
+        <audio controls="controls">
+          <source src="./Music/Alan_Tam_-_Midnight_Rider_73669081.mp3" type="audio/mpeg">         
+        </audio>
+        </div>
+        
+      </div>
+      <div class="playList">
+        <div class="nameMusic">
+          basstrologe somebody tolove.
+        </div>
+        <div class="playMusic">
+          <audio controls="controls">
+            <source src="./Music/basstrologe-somebody-to-love.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      
+      </div>
+      <div class="playList">
+        <div class="nameMusic">
+          Clint Mansel-Lux Aeterna Requiem for a Dream.
+        </div>
+        <div class="playMusic">
+          <audio controls="controls">
+            <source src="./Music/Clint_Mansel_-_Lux_Aeterna_OST_Requiem_for_a_Dream_-_Vechnyjj_svet_OST_Rekviem_po_me_62556380.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      
+      </div>
+      <div class="playList">
+        <div class="nameMusic">
+          Ludovico Einaudi - Uno Mattina
+        </div>
+        <div class="playMusic">
+          <audio controls="controls">
+            <source src="./Music/Ludovico_Einaudi_-_Uno_Mattina_65377642.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      
+      </div>
+      
 
     </main>
 
