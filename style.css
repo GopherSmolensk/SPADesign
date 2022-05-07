@@ -1,0 +1,345 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+.messagAvatarImages {
+  width: 50px;
+  height: 50px;
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.headerActiveImg{
+  width: 50px;
+  height: 50px;
+}
+
+article>*+* {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.gridContainer * {
+  font-size: 18px;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace, cursive;
+}
+
+.gridContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: grid;
+  background-color: #fff;
+  grid-gap: 20px;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas: 
+  "header header"
+  "aside main"
+  "footer footer";
+}
+header {
+  grid-area: header;
+  background-color: rgb(224, 227, 248);
+  
+}
+.headerItem {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-top: 15px;
+  height: 50px;
+  align-items: center;
+  padding: 5px;
+}
+.headerLogo {
+  margin-left: 20px;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Water Brush', cursive;
+  font-size: 50px;
+  color: red;
+  cursor: pointer;
+}
+.headerInput {
+  
+}
+* {
+  box-sizing: border-box;
+}
+
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  outline: none;
+  background: #fff;
+  color: #9E9C9C;
+}
+
+.buttonHeader {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #7BA7AB;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #fff;
+}
+.headerActive {
+  margin-left: 25px;
+  cursor: pointer;
+}
+.headerCenter {
+  display: flex;
+  align-items: center;
+}
+.headerAboutMe {
+  padding: 5px;
+  cursor: pointer;
+  margin-right: 25px;
+  background-color: rgb(4, 161, 17);
+  border-radius: 5px;
+}
+aside {
+  grid-area: aside;
+  background-color: rgb(230, 233, 250);
+  
+}
+main {
+  grid-area: main;
+  background-color: rgb(230, 233, 250);
+}
+footer {
+  grid-area: footer;
+  background-color: rgb(7, 31, 167);
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-between;
+  padding: 0 0 0 15px;
+}
+.profileItemStyle {
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 150px;
+  text-align: center;
+  background-color: rgb(199, 57, 180);
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.friendTitleNav {
+  font-size: 25px;
+  color: forestgreen;
+  font-family: 'Montserrat',
+  sans-serif;
+  font-family: 'Oleo Script Swash Caps',
+  cursive;
+  
+}
+.friendTitle {
+text-align: center;
+}
+/* circle circle circle circle circle */
+
+.circle {
+  background: gold;
+  clip-path: circle(50%);
+  height: 60px;
+  width: 60px;
+}
+.circleFriendsBlock {
+  /* display: flex;
+  justify-content: space-around; */
+}
+.circleFriendsItem {
+  /* display: flex; */
+  justify-content: space-between;
+  margin: 5px;
+  align-items: center;
+}
+.friendNameStaly {
+  font-size: 20px;
+  color: crimson;
+}
+
+
+
+/* circle circle circle circle circle */
+
+
+
+
+.dialog {
+  display: flex;
+  padding: 0 0 0 10px;
+ 
+}
+.dialogItems {
+  margin-top: 10px;
+  
+  width: 150px;
+}
+.dialogItem {
+  background-color: rgb(199, 57, 180);
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+}
+.messageField {
+  margin: 10px 0 0 50px;
+}
+.messageFieldLeft {
+  margin-top: 10px;
+  width: 500px;
+  display: flex;
+}
+.messageFieldRight{
+ 
+  margin-top: 10px;
+  width: 750px;
+  display: flex;
+  justify-content: end;
+}
+.message {
+  font-size: 20px;
+  margin: 0 0 0 10px;
+  border-radius: 20px;
+  background-color: rgb(153, 0, 255);
+  overflow-wrap: break-word;
+  padding: 10px;
+  max-width: 400px;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  
+}
+
+
+
+
+/* Профиль Профиль Профиль Профиль Профиль Профиль */
+
+.avatarPropfile {
+  
+  border-radius: 10px;
+  background-color: rgb(0, 47, 255);
+  height: 200px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.avatarImagesProf {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+.descriptinUser{
+  margin-left: 50px;
+  
+}
+.descriptinUserRightColumn {
+  margin-right: 50px;
+  
+}
+.elem{
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+}
